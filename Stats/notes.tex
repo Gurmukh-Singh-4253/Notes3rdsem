@@ -93,8 +93,8 @@
 \rule{15.5cm}{0.1mm}%{\linewidth}{0.1mm}
 
 % Optional TOC
-% \tableofcontents
-% \pagebreak
+\tableofcontents
+\pagebreak
 
 %--Paper--
 
@@ -244,11 +244,73 @@ Steps to find Median in case of Discrete and continuous data:
 
 In case of continuous data:
 \[
-  Median = l + \frac{\left( \frac{n}{2} - cf \right)}{f}
+  Median = l + \frac{\left( \frac{n}{2} - cf \right)h}{f}
 \]
-where cf is the cumulative frequency and f is the frequency of the chosen class
+where cf is the cumulative frequency and f is the frequency of the chosen class, $h$ is the class size
 
-fundamentals of mathematical statistics by SC Gupta and VK Kapoor 
-Probability and statistics by walpaul
 \subsection{Mode}
+The observation which occurs the most is called the mode of the data. \\
+In more general terms, the most probable observation in a dataset is the mode of the data. 
+
+\begin{problem}5
+  Find mode for the following data:
+  10,11,15,18,18,18,15,10,18,20
+\end{problem}
+
+\begin{problem}6
+  Find the mean, median and mode for the following data
+  \begin{center}
+    \begin{tabular}{c|c}
+      CI & f \\
+      \hline
+      0-10 & 3 \\
+      10-20 & 5 \\ 
+      20-30 & 7 \\ 
+      30-40 & 2\\ 
+      40-50 & 1 \\ 
+      \hline
+      Total & 51 \\
+    \end{tabular}
+  \end{center}
+\end{problem}
+\textbf{How to find the mode for continuous data}
+\begin{enumerate}
+  \item Find the modal class which is having the maximum frequency.
+  \item based on that input the values into the following formulae:
+    \[
+      mode = l + h \left( \frac{f_1 - f_2}{2f_1-f_0-f_2} \right)
+    \]
+\end{enumerate}
+\subsection{The interconnection between the measures of central tendency}
+\[
+  Mode = 3 Median - 2 Mean
+\]
+
+\subsection{Geometric and Harmonic mean}
+\begin{definition}
+   Geometric mean is defined as the $n$th root of the product of $n$ observations\\
+   Mathematically:
+   \[
+     GM = \sqrt[n]{\prod_{i=0}^n x_i}
+   \]
+\end{definition}
+
+\begin{problem}7
+   Find the Geometric Mean for the values 2,4,8
+\end{problem}
+
+\begin{definition}
+   Harmonic mean is defined as the reciprocal of arithemetic mean of the reciprocal of all the observations
+   \[
+      HM = \frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}}
+   \]
+\end{definition}
+
+\begin{mytheorem}
+   The following inequality is always true:
+   \[
+      AM \geq GM \geq HM
+   \]
+\end{mytheorem}
+
 \end{document}
