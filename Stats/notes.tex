@@ -313,4 +313,78 @@ In more general terms, the most probable observation in a dataset is the mode of
    \]
 \end{mytheorem}
 
+\subsection{Histogram}
+Histogram can also be used to compute the value of mode. 
+
+\subsection{Ogive}
+Ogives are used to compute the value of median. 
+They are nothing but graphs of cumulative distribution functions. \\ 
+The point of intersection of two ogives gives the median. 
+
+\subsection{Quartiles}
+Quartiles are the values which divide the dataset into 4 equal parts. These points are called $ Q_1, Q_2, Q_3$. 
+
+\[
+  Q_1 = l + \frac{\left( \frac{n}{4} - cf \right)h}{f}
+\]
+
+\[
+  Q_2 = l + \frac{\left( \frac{n}{2} - cf \right)h}{f}
+\]
+
+\[
+  Q_3 = l + \frac{\left( \frac{3n}{4} - cf \right)h}{f}
+\]
+\subsection{Deciles}
+Deciles are the values which divide the dataset into 10 equal parts. 
+
+\subsection{Percentiles}
+Percentiles are the values which divide the dataset into 100 equal parts. 
+
+To find the $x$th percentile we can use the following formulae:
+
+\[
+  p_{x} =l + \frac{\left( \frac{x n}{100} - cf \right)h}{f} 
+\]
+
+\section{Measures of Spread/Dispersion}
+
+Measures of spread are a numerical quantity to signify the variation in the observations.\\
+Dispersion means the scatterment of observations. \\
+There are a number of ways to get a gist of the Dispersion. 
+
+\begin{enumerate}
+  \item Range: it is the difference between the maximum and minimum value of the dataset. 
+  \item Quartile Deviation: It is equal to $\frac{Q_3-Q_1}{2}$
+  \item Mean Deviation: It is the arithemetic mean of absolute value of deviation of observations from average. 
+    \begin{align*}
+      MD &= \frac{\sum \lvert x - \overline{x} \rvert}{n} ( Discrete )\\
+         &=  \frac{\sum f \lvert x - \overline{x} \rvert}{N} ( Continuous )
+    \end{align*}
+  \item Standard deviation: It is the positive squareroot of arithemetic mean of square of deviation of observations 
+    from mean. It is denoted by $\sigma$. This is applicable when your mean is an integer.
+    \[
+      \sigma = \sqrt{\frac{\sum (x - \overline{x})^2}{n}} ( helpful\ when\ mean\ is\ integral )
+    \]
+
+    \[
+      \sigma = \sqrt{\frac{1}{n}\left( \sum x^2 - \frac{(\sum x)^2}{n}\right)} ( helpful\ when\ mean\ is\ non-integral\ and\ x\ is\ small )
+    \]
+    This is an alternate derivation of the formulae $V = E[X^2]-E[X]^2$
+
+    \[
+      d = x-a; 
+      \sigma = \sqrt{\frac{1}{n}\left( \sum d^2 - \frac{(\sum d)^2}{n}\right)} ( helpful\ when\ mean\ is\ non-integral\ and\ x\ is\ large )
+    \]
+  \item Variance: It is the square of standard deviation. 
+    \[
+      V = \sigma^2 
+    \]
+\end{enumerate}
+
+\subsection{Coefficient of variation}
+It is another way of measuring the spread. it is analogous to standard deviation
+\[
+  CV = \frac{\sigma}{\overline{X}} \times 100
+\]
 \end{document}

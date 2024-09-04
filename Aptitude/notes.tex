@@ -1,4 +1,4 @@
-\documentclass[11pt,letterpaper]{article}
+\documentclass[12pt,letterpaper]{article}
 
 \usepackage{graphicx}
 \usepackage{fancybox}
@@ -61,6 +61,7 @@
         {\textit{Example:}\\}
 	{}
 %I sholud be ashamed to forget the definition environment
+
 \newenvironment{definition}
 	{\begin{mdframed}$\underline{\textit{Def}^\textit{n}:} $\\}
 	{\end{mdframed}}
@@ -72,79 +73,4 @@
 
 \begin{document}
 
-\begin{center}
-  \Huge{Computer Networks Notes}\\
-  \vspace{0.25cm}
-  \small{Gurmukh Singh}
-\end{center}
-
-\vspace{-1.75cm}
-
-\begin{flushright}
-  Instructor: \\ Mrs. Shubhani Agarwal
-\end{flushright}
-
-\vspace{-1.3cm}
-
-\begin{flushleft}
-  B.Tech. CSE
-\end{flushleft}
-
-\rule{15.5cm}{0.1mm}%{\linewidth}{0.1mm}
-
-% Optional TOC
-\tableofcontents
-\pagebreak
-
-%--Paper--
-
-\section{Computer Networks}
-
-\subsection{Data Communication:}
-
-the exchange of information between two devices via some form of transmission medium, such as wired cable. The 4 fundamental characteristics of this are:
-\begin{itemize}
-  \item Delivery
-  \item Accuracy
-  \item Time
-  \item Jitter (variation in packet delivery time)
-\end{itemize}
-
-\subsection{Components of data communication:}
-There are 5 components in data communication: 
-\begin{itemize}
-  \item Sender
-  \item Reciever
-  \item Message (the data to be transferred)
-  \item Transmission medium
-  \item Protocol(the rules and regulations to be send)
-\end{itemize}
-
-\subsection{Data representation:}
-how we can represent data. It represents in the form of text, numbers, image, audio and video. 
-
-\subsection{Data flow:}
-There are 3 types of data flow: 
-\begin{itemize}
-\item Simplex
- 	One way: sender stays sender and reciever stays reciever. 
-	Unidirectional. 
-\item Half-Duplex
-	The direction can be changed but at a time there can only be one directional travel.
-	Each station can both transmit and receive but not at the  same time. 
-\item Duplex
-	Simultaneous Data transfer over both nodes. 
-	Both stations can transmit and receive simultaneously. 
-\end{itemize}
-
-\subsection{Networks:}
-Network is a set of devices connected by communication links. A network must be able to meet a certain number of criteria. These are:
-\begin{itemize}
-  \item Performance (Throughput and latency)
-  \item Reliability (low amount of downtime)
-  \item Flexibility (Scalability)
-  \item Security    (There should be no data manip)
-\end{itemize}
-
-\subsection{OSI model}
 \end{document}

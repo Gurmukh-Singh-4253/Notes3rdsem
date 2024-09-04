@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Operating systems}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Goals of operating systems: }{2}{}%
+\contentsline {subsection}{\numberline {1.2}Types of operating systems:}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Batch OS}{2}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Multiprogramming OS}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}Multitasking OS}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}Multiprocessing OS}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.5}Real time OS}{3}{}%
+\contentsline {section}{\numberline {2}Process management}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Process}{4}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Attributes of a process}{6}{}%
+\contentsline {subsection}{\numberline {2.2}States of a process}{7}{}%

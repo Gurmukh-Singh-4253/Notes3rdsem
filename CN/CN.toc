@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Computer Networks}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Data Communication:}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Components of data communication:}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Data representation:}{2}{}%
+\contentsline {subsection}{\numberline {1.4}Data flow:}{2}{}%
+\contentsline {subsection}{\numberline {1.5}Networks:}{2}{}%
+\contentsline {subsection}{\numberline {1.6}OSI model}{3}{}%
