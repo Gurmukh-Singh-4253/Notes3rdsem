@@ -383,8 +383,49 @@ There are a number of ways to get a gist of the Dispersion.
 \end{enumerate}
 
 \subsection{Coefficient of variation}
-It is another way of measuring the spread. it is analogous to standard deviation
+It is another way of measuring the spread. It is analogous to standard deviation with respect to the mean. 
 \[
   CV = \frac{\sigma}{\overline{X}} \times 100
 \]
+Suppose there are two sequences with $n_1$ and $n_2$ observations. \\ 
+$\overline{x}_1$ and $\overline{x}_2$ are their means. \\ 
+
+their combined variance will be: 
+\[
+  \sigma^2 = \frac{2}{n_2 + n_2} [n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)]
+\]
+where $d_i = \overline{x}_i - \overline{x}$. here $ \overline{x}$ is the combined mean of the series. 
+
+\subsection{Skewness and Kurtosis}
+
+While studying a distribution we can calculate the measures of central tendency and the measures of spread. 
+However even this information is not enough to determine the behavior of the randow variable distribution. 
+In order to further narrow down in the analysis of the beha vior of the variable we study the skewness of the distribution. 
+
+A distribution is called skewed if: 
+\begin{itemize}
+  \item The Measures of central tendencies do not coincide. 
+  \item The curve does not follow gaussian nature. 
+  \item The quartiles are not equidistant from the median. 
+  \item Some of the positive deviations from median is not equal to the sum of negative deviations from the median. 
+\end{itemize}
+
+\includegraphics[width = \textwidth]{figs/Pasted image.png}
+
+There can be two types of skewness: 
+\begin{enumerate}
+  \item Positive skewness (Right skewed)
+  \item Negative skewness (Left skewed)
+\end{enumerate}
+
+\subsubsection{Positive skewness}
+In this most of the values lie to the right to the peak. 
+
+one way to determine this is that $mode > median > mean$ 
+
+
+\subsubsection{Negative skewness}
+In this most of the values lie to the left to the peak. 
+
+one way to determine this is that $mode < median < mean$ 
 \end{document}
