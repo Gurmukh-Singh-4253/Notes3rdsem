@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.13)  4 SEP 2024 13:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.8.13)  9 SEP 2024 10:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -873,25 +873,40 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 413--414
 [][] 
  []
 
-[7] [8 <./figs/Pasted image.png>] (./notes.aux)
+[7] [8 <./figs/Pasted image.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 462--466
+
+ []
+
+<figs/Pasted image (2).png, id=50, 475.7775pt x 275.0275pt>
+File: figs/Pasted image (2).png Graphic file (type png)
+<use figs/Pasted image (2).png>
+Package pdftex.def Info: figs/Pasted image (2).png  used on input line 473.
+(pdftex.def)             Requested size: 469.75499pt x 271.56044pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 473--474
+[][] 
+ []
+
+[9 <./figs/Pasted image (2).png>] [10] (./notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 21341 strings out of 476076
- 402353 string characters out of 5793775
- 1942187 words of memory out of 5000000
- 43037 multiletter control sequences out of 15000+600000
+ 21350 strings out of 476076
+ 402630 string characters out of 5793775
+ 1941187 words of memory out of 5000000
+ 43046 multiletter control sequences out of 15000+600000
  566771 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,9n,93p,638b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on notes.pdf (8 pages, 383422 bytes).
+Output written on notes.pdf (10 pages, 434299 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 126 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

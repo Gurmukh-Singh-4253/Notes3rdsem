@@ -418,6 +418,15 @@ There can be two types of skewness:
   \item Negative skewness (Left skewed)
 \end{enumerate}
 
+\[
+  S_k = Mean - Mode
+  \begin{cases}
+    = 0 & if\ data\ is\ symmetrical\\
+    > 0 & if\ data\ is\ positively\ skewed\\
+    < 0 & if\ data\ is\ negatively\ skewed
+  \end{cases}
+\]
+
 \subsubsection{Positive skewness}
 In this most of the values lie to the right to the peak. 
 
@@ -428,4 +437,55 @@ one way to determine this is that $mode > median > mean$
 In this most of the values lie to the left to the peak. 
 
 one way to determine this is that $mode < median < mean$ 
+
+\subsubsection{Moments}
+Arithemetic mean of various powers of deviation of observation from mean. 
+
+\[
+  \mu_r = \frac{\sum(x-\overline{x})^r}{n}
+\]
+
+\begin{enumerate}
+  \item $\mu_1 = 0$
+  \item $\mu_2 = $ variance
+  \item $\mu_3 = $ skewness
+  \item $\mu_4 = $ kurtosis
+\end{enumerate}
+
+\subsubsection{Coefficient of skewness:}
+\[
+  \beta_1 = \frac{\mu_3^2}{\mu_2^3}
+\]
+
+\[
+  \gamma_1 = \frac{\mu_3}{(\sqrt{\mu_2})^3}
+\]
+if $gamma_1 = 0$ the data is symmetrical. \\
+if $gamma_1 > 0$ the data is right skewed. \\
+if $gamma_1 < 0$ the data is left skewed. \\
+
+\subsubsection{Kurtosis}
+
+It measures the flatness or peakness of the distribution. 
+
+\vspace{1cm}
+
+\includegraphics[width = \textwidth]{figs/Pasted image (2).png}
+
+\[
+  \beta_2 = \frac{\mu_4 }{(\mu_2)^2}
+\]
+
+
+\[
+  \gamma_2 = \beta_2 - 3
+\]
+
+\[
+  Distribution = \begin{cases}
+    Mesokurtic,\ if\ \gamma_2 = 0\\
+    Leptokurtic,\ if\ \gamma_2 > 0\\
+    Platykurtic,\ if\ \gamma_2 < 0
+  \end{cases}
+\]
 \end{document}

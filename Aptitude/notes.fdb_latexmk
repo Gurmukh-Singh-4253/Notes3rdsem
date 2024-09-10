@@ -1,7 +1,14 @@
 # Fdb version 4
-["pdflatex"] 1725255602.54925 "notes.tex" "notes.pdf" "notes" 1725255602.94655 0
+["pdflatex"] 1725861924.85943 "notes.tex" "notes.pdf" "notes" 1725861925.30386 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1716849630 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1716849630 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1716849630 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1716849630 1292 296a67155bdbfc32aa9c636f21e91433 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1716849630 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1716849630 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1716849630 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1716849630 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1716849630 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1716849630 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
   "/usr/share/texmf-dist/tex/generic/iftex/iftex.sty" 1716849630 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -142,11 +149,14 @@
   "/usr/share/texmf-dist/tex/latex/zref/zref-abspage.sty" 1716849630 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "/usr/share/texmf-dist/tex/latex/zref/zref-base.sty" 1716849630 20785 f7d1133a287929598a897c93f8f4c44b ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723523131.0678 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723523033 7112996 3ec8f5f9f13baed9fae0ebef98cbc061 ""
-  "notes.aux" 1725255602.91214 43 0a6ade4f027f9d564f6341465efa0b40 "pdflatex"
-  "notes.tex" 1725255600.52896 2182 d883319e123b232eafb808c49d8d5c73 ""
+  "notes.aux" 1725861925.25987 67 d1f1d04f1f825549314e4f02ae5806bb "pdflatex"
+  "notes.tex" 1725861923.99981 2522 1b7ddb491842fd1519f8e5e9cd4e2a21 ""
+  "notes.toc" 1725861925.20986 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "notes.aux"
   "notes.log"
   "notes.pdf"
+  "notes.toc"
   (rewritten before read)
