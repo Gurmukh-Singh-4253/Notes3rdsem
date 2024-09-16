@@ -5,3 +5,5 @@
 \contentsline {subsection}{\numberline {1.4}Data flow:}{2}{}%
 \contentsline {subsection}{\numberline {1.5}Networks:}{2}{}%
 \contentsline {subsection}{\numberline {1.6}OSI model}{3}{}%
+\contentsline {subsubsection}{\numberline {1.6.1}Transmissin impairment}{3}{}%
+\contentsline {subsection}{\numberline {1.7}Layers of OSI model}{3}{}%

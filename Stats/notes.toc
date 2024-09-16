@@ -18,3 +18,12 @@
 \contentsline {subsubsection}{\numberline {2.2.3}Moments}{9}{}%
 \contentsline {subsubsection}{\numberline {2.2.4}Coefficient of skewness:}{9}{}%
 \contentsline {subsubsection}{\numberline {2.2.5}Kurtosis}{9}{}%
+\contentsline {section}{\numberline {3}Probability}{10}{}%
+\contentsline {subsection}{\numberline {3.1}Prerequisites}{10}{}%
+\contentsline {subsection}{\numberline {3.2}Definition of Probability}{11}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Mathematical or Empirical Probability}{11}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Statistical Probability}{11}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Axiomatic Probability}{11}{}%
+\contentsline {subsection}{\numberline {3.3}Addition law of Probability}{12}{}%
+\contentsline {subsection}{\numberline {3.4}Multiplication Law of Probability}{12}{}%
+\contentsline {subsection}{\numberline {3.5}Bayes Theorem}{12}{}%

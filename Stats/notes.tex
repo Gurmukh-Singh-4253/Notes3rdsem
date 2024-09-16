@@ -460,9 +460,9 @@ Arithemetic mean of various powers of deviation of observation from mean.
 \[
   \gamma_1 = \frac{\mu_3}{(\sqrt{\mu_2})^3}
 \]
-if $gamma_1 = 0$ the data is symmetrical. \\
-if $gamma_1 > 0$ the data is right skewed. \\
-if $gamma_1 < 0$ the data is left skewed. \\
+if $\gamma_1 = 0$ the data is symmetrical. \\
+if $\gamma_1 > 0$ the data is right skewed. \\
+if $\gamma_1 < 0$ the data is left skewed. \\
 
 \subsubsection{Kurtosis}
 
@@ -488,4 +488,136 @@ It measures the flatness or peakness of the distribution.
     Platykurtic,\ if\ \gamma_2 < 0
   \end{cases}
 \]
+
+\section{Probability}
+Probability is the measure of belief that a certain event will occur. 
+\subsection{Prerequisites}
+
+\begin{definition}
+  Trial:\\
+Suppose an experiment is repeated under identical and homogeneous conditions does not give unique result
+but may result in one of several possible outcomes. The experiment is known as a random experiment or a Trial.
+\end{definition}
+
+For example: the toss of a coin.\\
+The outcome of a Trial is known as an \textbf{event. }
+
+\begin{definition}
+Exhaustive events:\\
+The set of all the simple events that can occur in a trial are called exhaustive events. 
+The cardinality of the sample space can be found out using basic Combinatorics.
+\end{definition}
+
+\begin{problem}8
+  What would be the sample space of the experiment in which 2 coins are tossed together.
+\end{problem}
+
+\begin{solution}
+  \{HH,HT,TH,TT\}
+\end{solution}
+
+\begin{definition}
+Mutually Exclusive Events:\\
+Events are mutually exclusive if no two or more than 2 events occur simultaneously in the same trial
+\end{definition}
+
+Mathematically, two events $E$ and $F$ are mutually exclusive $\iff E \cap F = \phi$
+
+\begin{definition}
+Favourable events:\\
+The number of simple events favourable to the happening of an event. 
+\end{definition}
+
+\begin{definition}
+Equally likely events:\\
+This means that events have equal chances of occurence.
+\end{definition}
+
+\begin{definition}
+Independent events:\\
+Two events are called Independent if the occurence of one event does not influence the occurence of the other. 
+
+Mathematically, Two events are independent if
+\[
+  P(E \cup F) = P(E) \times P(F)
+\]
+\end{definition}
+
+\subsection{Definition of Probability}
+\subsubsection{Mathematical or Empirical Probability}
+
+The probability of an event $E$ is 
+\[
+  P(E) = \frac{number\ of\ simple\ events\ favourable\ to\ E}{Total\ number\ of\ simple\ events}
+\]
+
+Suppose there are total of $n$ number of events and the number of events favourable for a certain event are $m$. then the probability will be $\frac{m}{n}$.
+
+Then the number of events unfavourable to the same event is $n-m$ and the probability will be $\frac{n-m}{n}$
+
+Axiomatically:
+\[
+  P(E) = 1- P(\overline{E})
+\]
+
+and 
+
+\[
+  0 \leq P(E) \leq 1 \ \forall E \subset \Omega
+\]
+
+\subsubsection{Statistical Probability}
+The probability of an event $E$ is 
+\[
+  P(E) = \frac{number\ of\ simple\ events\ favourable\ to\ E}{Total\ number\ of\ simple\ events}
+\]
+
+\subsubsection{Axiomatic Probability}
+Consider a sample space $S$. The probability is a function that assigns a non-negative value to every event, say $A$ denoted by $P(A)$ is called the probability of an event $A$ if it satisfies the following properties. 
+\begin{enumerate}
+  \item $P(A) \in [0,1] \forall A \subset S$
+  \item $P(S) = 1$
+  \item $P(\bigcup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)$ where each $A_i$ is a mutually exclusive event
+\end{enumerate}
+
+\subsection{Addition law of Probability}
+If $A$ and $B$ are two events and are not mutually exclusive, so : 
+\[
+  P(A \cup B) = P(A) + P(B) - P(A \cap B)
+\]
+
+\subsection{Multiplication Law of Probability}
+\[
+  P(A\cup B) = P(A) \cdot P( B \vert A )
+\]
+
+if $A$ and $B$ are independent then $ P( B \vert A ) = P(B)$ and 
+
+\[
+  P(A\cup B) = P(A) \cdot P( B )
+\]
+
+\subsection{Bayes Theorem}
+If $E_1, E_2, E_3 \dots E_n$ are $n$ mutually exclusive events with $P(E_i) > 0 \forall i$ then for any event $A$ 
+which is a subset of $\bigcup_{i=1}^n E_i$ 
+
+\[
+  P(E_1 \vert A) = \frac{P(E_1) P(A \vert E_1)}{\sum_{i=1}^n{P(E_i) P(A \vert E_i)}}
+\]
+
+Here $P(E_i \vert A)$ is called Posterior Probability.
+
+\begin{problem}8
+  A class consists of 5 girls and 7 boys. If a comittee of 3 is to be chosen at random what is the probability that 
+  \begin{enumerate}
+    \item 3 boys are selected\hfill (Ans = 0.159)
+    \item exactly 2 girls are selected\hfill (Ans = 0.318)
+  \end{enumerate}
+\end{problem}
+\begin{solution}
+  \begin{enumerate}
+    \item 
+    \item 
+  \end{enumerate}
+\end{solution}
 \end{document}

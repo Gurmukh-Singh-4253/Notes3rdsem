@@ -323,6 +323,9 @@ INPUT ./figs/Pasted image (2).png
 INPUT ./figs/Pasted image (2).png
 INPUT ./figs/Pasted image (2).png
 INPUT ./figs/Pasted image (2).png
+INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT notes.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
