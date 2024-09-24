@@ -1,5 +1,6 @@
 \documentclass[11pt,letterpaper]{article}
 
+\usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{fancybox}
 \usepackage[utf8]{inputenc}
@@ -97,6 +98,13 @@
 \pagebreak
 
 %--Paper--
+
+\begin{mdframed}[backgroundcolor=gray!20]
+   ``All models are wrong, but some of them are useful''
+   \begin{flushright}
+     $\sim$ George Box
+   \end{flushright}
+\end{mdframed}
 
 \section{Measures of Central Tendency}
 \begin{enumerate}
@@ -620,4 +628,113 @@ Here $P(E_i \vert A)$ is called Posterior Probability.
     \item 
   \end{enumerate}
 \end{solution}
+
+\subsection{Randow Variables}
+Axiomatically a Random variable is a variable which takes values at random.
+A random variable is a variable $X$ that assigns a real number for each and every outcome. 
+
+For example, the number of heads in two tosses of a coin.
+
+There are two types of Random variable:
+\begin{enumerate}
+  \item Discrete Random Variable: \\
+    A random variable which takes countably many values. 
+  \item Continuous Random Variable: \\ 
+    A Random variable which takes uncountably many values.
+\end{enumerate}
+
+There are two types of probability functios: 
+\begin{enumerate}
+  \item Probability mass functions: \\
+    The function is said to be a PMF if : 
+    \begin{enumerate}
+      \item $ 0 \leq P(X) \leq 1 $ 
+      \item $\displaystyle \sum_{x \in \Omega} P(X) = 1 $ 
+    \end{enumerate}
+  \item Probability density functions:\\
+    It gives a measure of how likely the variable is to lie in the neighbourhood of a point.
+    The function $f_X(x)$ of the numeric values of a continuous randow variable is said to be a PDF if it satisfies:
+    \begin{enumerate}
+      \item $ f_X(x) \geq 0 \forall x$ 
+      \item $\displaystyle \int_{-\infty}^\infty f_X(x) = 1$ 
+      \item $\displaystyle P(a<x<b) = \int_a^b f_X(x) dx$
+    \end{enumerate}
+\end{enumerate}
+
+\begin{problem}9
+  A coin is tossed 3 number of times. Lets say $X$ be the number of times Head appears.
+\end{problem}
+
+\begin{solution}
+  \begin{center}
+  % \[
+  %   \begin{tabular}{|c|c|c|c|c|}
+  %     \rule
+  %     $X$ & 0 & 1 & 2 & 3 \\
+  %     \rule
+  %     $f_X(x)$ & \frac{1}{8} & \frac{3}{8} & \frac{3}{8} &\frac{1}{8}
+  %     \rule
+  %   \end{tabular}
+  % \]
+  \end{center}
+\end{solution}
+
+\begin{problem}{10}
+  A shipment of 8 microcomputers to a retailer outlet contains 3 defectives. 
+  if a school makes a random purchase of 2 computers find the probability distribution for the number of defectives. 
+\end{problem}
+
+\begin{problem}{11}
+  In an experiment of tossing 3 coins, obtain the probability distribution of: 
+  \begin{enumerate}
+    \item $X$ denotes the number of heads
+    \item $Y$ denotes number of head runs
+    \item $Z$ the number of successive heads
+    \item $X+Y$ 
+    \item $XY$
+  \end{enumerate}
+\end{problem}
+
+\subsection{Expectation of Random Variables}
+\begin{definition}
+   if $X$ is a random variable, the expectation of $X$ is denoted as $E(X)$.
+  \[
+    E(X) = \sum_{x\in\Omega} x f_X(x)
+  \]
+  \[
+    E(X) = \int_{x\in\Omega} x f_X(x) dx
+  \]
+\end{definition}
+Properties of Expectation;
+\begin{enumerate}
+  \item $E(aX) = aE(X)$
+  \item $E(a) = a$
+  \item $E(aX+b) = aE(X)+b$
+\end{enumerate}
+
+\subsection{Variance of a random variable}
+\[
+  V(X) = E(X^2) - E(X)^2
+\]
+Properties of variance:
+\begin{enumerate}
+  \item $V(aX) = a^2 V(X)$
+  \item $V(a) = 0$
+  \item $V(aX+b) = a^2 V(X)$
+\end{enumerate}
+
+\subsection{Standard deviation of a random variable}
+\[
+  \sigma(X) = \sqrt{V(X)}
+\]
+
+\subsection{Moment generating functions}
+If $X$ is a random variable, then the moment generating of $X$, denoted as
+\[
+  M_X(t) = \sum_n e^{tx} f_X(X)
+\]
+\[
+  M_X(t) = \int_\mathbb{R} e^{tx} f_X(x) dx 
+\]
+
 \end{document}

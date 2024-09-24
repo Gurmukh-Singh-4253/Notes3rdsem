@@ -256,7 +256,7 @@ States of a process
     performing processes are performing some I/O and are waiting for initialization so we let them wait in secondary memory or move to wait or block state of secondary memory. 
 \end{enumerate}
 
-Generation of OS:
+\subsection{Generation of OS:}
 \begin{enumerate}
   \item First generation: (1940-1948)\\
     large and expensive.
@@ -276,13 +276,13 @@ Generation of OS:
     quantum computers and nanotechnology.
 \end{enumerate}
 
-Services of OS:
+\subsection{Services of OS:}
 \begin{enumerate}
   \item provide programs an environment to execute. 
   \item provide users means to run programs. 
 \end{enumerate}
 
-Program execution
+\subsection{Program execution}
 \begin{enumerate}
   \item leads a program into memory. 
   \item execution the program. 
@@ -292,6 +292,60 @@ Program execution
   \item Provides a mechanism for deadlock handling. 
 \end{enumerate}
 
-I/O
+\subsection{Operations on process}
+\begin{enumerate}
+  \item Creation:\\ Once a process is created it is in ready state and is present in main memory. 
+  \item Scheduling\\ When we have many processes in the ready queue we schedule it and give it to the CPU i.e. allocate the CPU to one of them on the basis of Scheduling. 
+    \begin{itemize}
+      \item New state: Process is about to be created and it is currently present in the secondary memory. 
+    \end{itemize}
+  \item Executing:\\ Once we give a process to the CPU it will start the execution. 
+  \item Killing/Delete:\\ Whenever we are done with the process we can simply kill the process. 
+\end{enumerate}
 
+\subsection{Process state transition Diagram}
+\includegraphics[width=\textwidth]{Imports/processstatetransition.png}
+NOTE:\\
+\begin{itemize}
+  \item The minimum number of states a process can go through is 4. (New, Ready, Run, Terminate)
+  \item Priority or time quantum may cause a process to premp
+  \item Suspend wait or suspend ready are in secondary memoryare in secondary memory.
+  \item I/O can occur anywhere (in main memory as well as in secondary memory) without any interruption once it is initiated. 
+\end{itemize}
+
+\subsection{Types of Schedulars in OS}
+There are 3 types of Schedulars in OS: 
+\begin{enumerate}
+  \item Long term Schedular:\\ Long term Schedular is responsible for the decisions about how many processes have to be created. 
+  \item Short term schedular:\\ Once we have a pool of processes waiting in ready queue to be alloted to CPU for execution. This decision is taken by short term scheduler AKA dispatcher.
+  \item Medium term scheduler:\\ Suspension decisions are taken by Medium term scheduler. this decision can be taken either in ready state or in wait or block state. 
+\end{enumerate}
+
+NOTE:\\
+Long term decisions of how many processes to be created is also known as degree of multiprogramming. (Number of processes that are present in the ready queue at maximum)
+
+When the processes are present in the states, they're basically presented as queues. These queues are implemented as linked lists. 
+\vspace{1cm}
+
+\includegraphics[width=0.8\textwidth]{Imports/ProcessQueue.png}\\
+fork() command is used for creating a new process and that process will go to the ready queue. 
+
+\subsection{Various times related to processes}
+\begin{enumerate}
+  \item Arrival time: \\ Whenever a process gets in the ready queue it is the time at which the process is ready for execution.
+  \item Burst time: \\ The amount of CPU time required by a process to finish (hard to predict/detect) in real time. 
+  \item Completion time: \\ The time at which the process completes it's execution is called completion time.
+  \item Turn around Time: \\ Completion time and arrival time are basically points in time whereas waiting time and burst time are durations in time. In between arrival time and completion time we can have a process 
+    either waiting or executing. The difference between completion time and arrival time is called Turn around time.
+  \item Waiting time: \\ The difference between Turnaround Time and Burst time is called Waiting time. 
+  \item Response time: \\ What is the first time the process hits the CPU after it arrives. 
+\end{enumerate}
+
+\subsection{CPU Scheduling:}
+Picking up a process from the ready queue and giving it to the CPU is called CPU scheduling. The short term scheduler will perform CPU scheduling. 
+\begin{itemize}
+  \item Who $\rightarrow$ short term scheduler 
+  \item Where $\rightarrow$ Ready state to running 
+  \item When $\rightarrow$ When a process moves
+\end{itemize}
 \end{document}

@@ -10,3 +10,11 @@
 \contentsline {subsection}{\numberline {2.1}Process}{4}{}%
 \contentsline {subsubsection}{\numberline {2.1.1}Attributes of a process}{6}{}%
 \contentsline {subsection}{\numberline {2.2}States of a process}{7}{}%
+\contentsline {subsection}{\numberline {2.3}Generation of OS:}{8}{}%
+\contentsline {subsection}{\numberline {2.4}Services of OS:}{8}{}%
+\contentsline {subsection}{\numberline {2.5}Program execution}{8}{}%
+\contentsline {subsection}{\numberline {2.6}Operations on process}{8}{}%
+\contentsline {subsection}{\numberline {2.7}Process state transition Diagram}{9}{}%
+\contentsline {subsection}{\numberline {2.8}Types of Schedulars in OS}{10}{}%
+\contentsline {subsection}{\numberline {2.9}Various times related to processes}{10}{}%
+\contentsline {subsection}{\numberline {2.10}CPU Scheduling:}{11}{}%
