@@ -18,3 +18,4 @@
 \contentsline {subsection}{\numberline {2.8}Types of Schedulars in OS}{10}{}%
 \contentsline {subsection}{\numberline {2.9}Various times related to processes}{10}{}%
 \contentsline {subsection}{\numberline {2.10}CPU Scheduling:}{11}{}%
+\contentsline {subsection}{\numberline {2.11}Scheduling algorithms}{11}{}%

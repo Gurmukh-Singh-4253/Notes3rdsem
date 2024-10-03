@@ -4,8 +4,8 @@
 \usepackage{fancybox}
 \usepackage[utf8]{inputenc}
 \usepackage{epsfig,graphicx}
-\usepackage{multicol,pst-plot}
-\usepackage{pstricks}
+% \usepackage{multicol,pst-plot}
+% \usepackage{pstricks}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -348,4 +348,30 @@ Picking up a process from the ready queue and giving it to the CPU is called CPU
   \item Where $\rightarrow$ Ready state to running 
   \item When $\rightarrow$ When a process moves
 \end{itemize}
+
+\subsection{Scheduling algorithms}
+FCFS(First Come First Serve): 
+\begin{itemize}
+  \item if two processes have the same arrival time then pick the one with lower process numbers. 
+\end{itemize}
+Note: one disadvantage of FCFS is convey effect (convey: when a process is having large burst time then all the processes which are greater will have to starve. This is also known as starvation process)
+
+SJF(Shortest job first):
+\begin{itemize}
+	\item Criteria: burst time 
+	\item Mode: Non premption
+\end{itemize}
+Whichever process has the least burst time is executed first. The process is not stopped until it is finished.
+Whenever two processes have the same burst time pick the one which has arrived earlier. SJF is the best known scheduling algorithm as of now.
+Advantages:
+\begin{itemize}
+	\item maximum throughput
+	\item minimum average waiting time.
+\end{itemize}
+Disadvantages:
+\begin{itemize}
+	\item Starvation to longer jobs.
+	\item It is not implemented because burst time of processes cannot be known as ahead \end{itemize}
+Throughput is maximum at any point of schedule for SJF because we complete as many jobs as possible depending upon test burst time.
+
 \end{document}
