@@ -82,7 +82,7 @@
 \vspace{-1.75cm}
 
 \begin{flushright}
-  Instructor: \\ Mrs. Neha
+  Instructor: \\ Dr. Neha
 \end{flushright}
 
 \vspace{-1.3cm}
@@ -629,7 +629,7 @@ Here $P(E_i \vert A)$ is called Posterior Probability.
   \end{enumerate}
 \end{solution}
 
-\subsection{Randow Variables}
+\subsection{Random Variables}
 Axiomatically a Random variable is a variable which takes values at random.
 A random variable is a variable $X$ that assigns a real number for each and every outcome. 
 
@@ -737,4 +737,134 @@ If $X$ is a random variable, then the moment generating of $X$, denoted as
   M_X(t) = \int_\mathbb{R} e^{tx} f_X(x) dx 
 \]
 
+\subsection{Probability Distributions}
+There are a number of probability distributions that arise naturally and must
+be kept in the back of one's mind. These can also be categorized in basically 
+2 categories:
+\begin{itemize}
+  \item Discrete Distributions
+    \begin{itemize}
+      \item Uniform distribution
+      \item Bernoulli trials
+      \item Binomial distribution
+      \item Poisson distribution
+      \item Negative Binomial distribution
+      \item Geometric distribution
+      \item Hypergeometric distribution
+    \end{itemize}
+  \item Continuous Distributions
+    \begin{itemize}
+      \item Uniform distribution
+      \item Normal distribution
+      \item Exponential distribution
+      \item Beta distribution 
+      \item Gamma distribution
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Uniform distribution}
+If a variable takes the values $1, 2, 3, \dots n$ with equally likely probability
+it is said to follow Uniform distribution with parameter $n$. Mathematically, if 
+we name the variable $X$ we can say:
+\[
+  X \sim Uniform(n) 
+\]
+The pmf of such a distribution is as follows: 
+\[
+  f_X(x) = \begin{cases} \frac{1}{n} & \forall x \in \{1, 2, 3, \dots, n\}\\
+  0 & Otherwise
+  \end{cases}
+\]
+The mean of this distribution is $\frac{n+1}{2}$.\\
+The variance of Uniform distribution is $\frac{n^2-1}{12}$. 
+
+\subsubsection{Bernoulli trials}
+An event which has only two outcomes has can be modelled as a Bernoulli trial, where 
+each outcome is encrypted as either a success or a failure. The parameter of a Bernoulli
+trial is $p$, where $p$ is the probability of success. Mathematically we can write:
+\[
+  X \sim Bernoulli(p)
+\]
+The pmf of such a distribution is as follows: 
+\[
+  f_X(x) = \begin{cases} p &, x = 1\\ 
+  (1-p) &, x = 2\\ 
+  0 &, Otherwise\end{cases}
+\]
+The Expectation of A Bernoulli RV is $p$ and the variance is $p(1-p)$ or $pq$
+where $q$ is the probability of failure.
+
+\subsubsection{Binomial distribution}
+Multiple independent and identically distributed Bernoulli trials put together act as 
+Binomial distribution. Apart from $p$, which still acts as the probability of success
+we gain another parameter $n$ which denotes how many times we let the event occur. 
+When we have to denote this mathematically, we write: 
+\[
+  X \sim Binomial(n,p)
+\]
+The pmf of Binomial distribution is:
+\[
+  f_X(x) = \begin{cases} {n \choose x} p^x (1-p)^{n-x} &,\forall x \in \{0, 1, 2, \dots, n\}\\
+  0 &, Otherwise\end{cases}
+\]
+The expectation of Binomial distribution is $np$ and the variance is $np(1-p)$.
+\subsubsection{Poisson distribution}
+Poisson distribution is used to model the number of times an event occurs in a fixed
+interval, given that the probability of the event happening at any point of time is 
+constant. Binomial distribution tends to Poisson distribution when $n \to \infty$ and 
+$p \to 0$. \\ 
+The pmf of poisson distribution is as follows: 
+\[
+  f_X(x) = \begin{cases} \frac{e^{-\lambda}\lambda^x}{x!} &, \forall x \in \mathbb{Z}^+_0\\ 
+  0 &, Otherwise\end{cases}
+\]
+Here $\lambda$ is the parameter of the distribution which signifies how many times the event 
+is expected to happen in the given interval. We say a RV $X \sim Poisson(\lambda)$ when
+we expect the event to happen $\lambda$ times in the set interval.
+
+\noindent As expected, the expectation of Poisson distribution is $\lambda$ and coincidentially
+the variance is numerically equal to the expectation. 
+\subsubsection{Negative Binomial distribution}
+Suppose there are $n$ bernoulli trials that are independent and the probability of
+success remains constant from trial to trial. Let $f(x;r,p)$ denotes the probability
+that there are $x$ failures preceding the $r$th success in $x+r$ trials. Now the
+last trial must be a success whose probability is $p$. In the remaining $x+r-1$
+trials we must have $r-1$ successes whose probability is given by:
+\[
+  {x+r-1 \choose r-1} p^{r-1} q^{x}
+\]
+A Random variable $X$ is said to follow negative binomial distribution with parameters 
+$r$ and $p$ if the pmf is given as:
+\[
+  f_X(x) = \begin{cases}  {x+r-1 \choose r-1} p^{r-1} q^{x} &, x \in \mathbb{Z}^+_0 \\ 
+  0 &, otherwise \end{cases}
+\]
+The mean of this distribution is $\frac{rq}{p}$ and the variance is $\frac{rq}{p^2}$
+
+\subsubsection{Geometric distribution}
+Suppose we have a series of independent trials and in each trial the probability
+of success $p$ remains same, then the probability that there are $x$ failures
+preceding the first success is:($X \sim Geo(p)$)
+\[
+  f_X(x) = \begin{cases} q^xp &, x \in \mathbb{Z}^+_0 \\ 
+  0 &, otherwise\end{cases}
+\]
+Mean: $\frac{q}{p}$\\
+Variance: $\frac{q}{p^2}$
+
+\subsubsection{Hypergeometric Distribution}
+This distribution is used when the population is finite and the sampling is done 
+without replacement. 
+
+e.g. Consider an urn with $N$ balls, $M$ of which are white and $N-M$ of them are red
+Suppose we want to draw a sample of $n$ from the urn, then the probability of getting $k$ white 
+balls is:
+
+A discrete random variable is said to follow Hypergeometric distribution if it only 
+assumes non-negative values and the pmf is given as:
+\[
+  f_X(x) = \begin{cases} \frac{{M\choose x} {N-M \choose n-x}}{{N \choose n}} &, x \in \mathbb{Z}^+_0\\
+    0 &, otherwise
+  \end{cases}
+\]
 \end{document}

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1727930001.50139 "notes.tex" "notes.pdf" "notes" 1727930002.09543 0
+["pdflatex"] 1728532995.62802 "notes.tex" "notes.pdf" "notes" 1728532996.23094 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1727349926 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1727349926 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -32,6 +32,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1727349926 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1727349926 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1727349926 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1727349926 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1727349926 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1727349926 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1727349926 35660 fb24af7afbadb71801619f1415838111 ""
@@ -109,6 +110,7 @@
   "/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1727349926 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1727349926 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "/usr/share/texmf-dist/tex/latex/fancybox/fancybox.sty" 1727349926 27261 5ae6156674330dc345adb79b6e5d8966 ""
+  "/usr/share/texmf-dist/tex/latex/float/float.sty" 1727349926 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/share/texmf-dist/tex/latex/geometry/geometry.sty" 1727349926 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1727349926 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1727349926 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -157,9 +159,9 @@
   "Imports/Process.pdf_tex" 1727424487.98841 2988 25d79e8f840639b029b6b29aac93cda5 ""
   "Imports/ProcessQueue.png" 1727424487.98841 13672 5ae3a1d58c6fc4649531d8c9d11b1ef6 ""
   "Imports/processstatetransition.png" 1727424487.98841 316722 4ab106bd60951f6b25119d789aaf94e3 ""
-  "notes.aux" 1727930002.03866 2455 ac875f518c2147f6b223899598b3c70e "pdflatex"
-  "notes.tex" 1727929999.56507 16531 eeab16425adc29b20beaf889effc3f76 ""
-  "notes.toc" 1727930002.03866 1526 49f309dd65a74117229e3e991f2e7c74 "pdflatex"
+  "notes.aux" 1728532996.18115 2925 f7709c985b96e4e884f4fc3ba743031c "pdflatex"
+  "notes.tex" 1728532995.19448 19776 95a75475e2a5739055cbe73300287a15 ""
+  "notes.toc" 1728532996.18115 1832 75ee836cea46efc25a77af5c578afa7e "pdflatex"
   (generated)
   "notes.aux"
   "notes.log"

@@ -14,6 +14,7 @@
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=1cm]{geometry}
 \usepackage{tcolorbox}
 \usepackage{import}
+\usepackage{float}
 \pagestyle{empty}
 \DeclareMathOperator{\tr}{Tr}
 \renewcommand{\sp}[1]{$${\begin{split}#1\end{split}}$$}
@@ -374,4 +375,93 @@ Disadvantages:
 	\item It is not implemented because burst time of processes cannot be known as ahead \end{itemize}
 Throughput is maximum at any point of schedule for SJF because we complete as many jobs as possible depending upon test burst time.
 
+\subsection{Priority Scheduling}
+Priority Scheduling is of two types: 
+\begin{itemize}
+  \item Static: it does not change throughout the execution of the process
+  \item Dynamic: it changes at regular intervals of time. 
+\end{itemize}
+
+Note: Whenever the process enters the ready queue, it comes alongwith a number associated with it
+This number is known as priority. Implementation may vary. 
+
+Sometimes highest number means lowest priority and sometimes lowest number means highest priority. 
+Among all available processes we pick the one with the highest priority. 
+
+Priority scheduling algorithm can be classified into two types: 
+\begin{enumerate}
+  \item Preemptive: We are choosing a process with highest process numbers and run it either
+till completion or till some other processes with higher priority entering the ready 
+queue. 
+  \item Non-premptive: When we choose the process with the highest priority we are going
+    to run it till completion without stopping it.\\
+
+    For example: (Lower number higher priority)
+    \begin{table}[H]
+      \begin{center}
+        \begin{tabular}{|c|c|c|c|}
+          \hline
+          Process & Priority & Arrival time (AT) & Burst time (BT) \\
+          \hline
+          $P_1$ & 3 & 0 & 8 \\
+          $P_2$ & 4 & 1 & 2\\
+          $P_3$ & 4 & 3 & 4\\
+          $P_4$ & 5 & 4 & 1\\
+          $P_5$ & 2 & 5 & 6\\
+          $P_6$ & 6 & 6 & 5\\
+          $P_7$ & 1 & 10 & 1\\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{table}
+\end{enumerate}
+
+\subsubsection{Preemptive Scheduling Algorithm}
+  \begin{table}[H]
+    \begin{center}
+      \begin{tabular}{|c|c|c|c|}
+        \hline
+        Process & Priority(higher the more) & Arrival time (AT) & Burst time (BT) \\
+        \hline
+        $P_1$ & 10 & 0 & 5 \\
+        $P_2$ & 20 & 1 & 4\\
+        $P_3$ & 30 & 2 & 2\\
+        $P_4$ & 40 & 4 & 1\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}
+
+  Criterion: Priority\\ 
+  Mode: Premptive\\ 
+  
+  run a process till a process with higher priority is available
+
+  \subsection{Process synchronization:}
+  As long as processes do not interfere with each other i.e. they run independently, 
+  there will be no problem at all as long as the OS protects memory space of one process
+  from another. There can be some problems if two processes are trying to communicate 
+  with each other. Here in operating systems, interprocess communication refers to 
+  communication between the processes running on the same computer. 
+
+
+  \subsection{System call}
+  The fork system call is used to create a new process or linux or unix system which is 
+  called child processes which runs concurrently with the processes which makes the 
+  fork command as parent process. after a new child process is created, both processes 
+  execute following command with the fork system call. 
+
+  \[
+    fork = \begin{cases} \end{cases}
+  \]
+
+  below are the different values returned by fork(): 
+  \begin{enumerate}
+    \item negative value
+      The creation of a child process was unsuccessful
+    \item zero
+      returns to the child process. 
+    \item positive value
+      returns to the parent process and the value is the PID of the process. 
+  \end{enumerate}
 \end{document}

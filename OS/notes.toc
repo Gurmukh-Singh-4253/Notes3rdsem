@@ -19,3 +19,7 @@
 \contentsline {subsection}{\numberline {2.9}Various times related to processes}{10}{}%
 \contentsline {subsection}{\numberline {2.10}CPU Scheduling:}{11}{}%
 \contentsline {subsection}{\numberline {2.11}Scheduling algorithms}{11}{}%
+\contentsline {subsection}{\numberline {2.12}Priority Scheduling}{12}{}%
+\contentsline {subsubsection}{\numberline {2.12.1}Preemptive Scheduling Algorithm}{12}{}%
+\contentsline {subsection}{\numberline {2.13}Process synchronization:}{13}{}%
+\contentsline {subsection}{\numberline {2.14}System call}{13}{}%
