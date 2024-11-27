@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1728532995.62802 "notes.tex" "notes.pdf" "notes" 1728532996.23094 0
+["pdflatex"] 1732686106.92977 "notes.tex" "notes.pdf" "notes" 1732686107.5073 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1727349926 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1727349926 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -105,6 +105,7 @@
   "/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty" 1727349926 3935 57aa3c3e203a5c2effb4d2bd2efbc323 ""
   "/usr/share/texmf-dist/tex/latex/base/article.cls" 1727349926 20144 147463a6a579f4597269ef9565205cfe ""
   "/usr/share/texmf-dist/tex/latex/base/inputenc.sty" 1727349926 5048 425739d70251273bf93e3d51f3c40048 ""
+  "/usr/share/texmf-dist/tex/latex/base/omscmr.fd" 1727349926 2469 74341109f164f230581718c66211c718 ""
   "/usr/share/texmf-dist/tex/latex/base/size12.clo" 1727349926 8449 f07039d8e4e89f21078d9b5137579bfc ""
   "/usr/share/texmf-dist/tex/latex/environ/environ.sty" 1727349926 4378 f429f0da968c278653359293040a8f52 ""
   "/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1727349926 13886 d1306dcf79a944f6988e688c1785f9ce ""
@@ -153,15 +154,16 @@
   "/usr/share/texmf-dist/tex/latex/zref/zref-abspage.sty" 1727349926 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "/usr/share/texmf-dist/tex/latex/zref/zref-base.sty" 1727349926 20785 f7d1133a287929598a897c93f8f4c44b ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1727929042.05829 5312047 b07fcd2a9090df96fc745b92a3db793b ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1727929018 7112990 c7195d88390a0f5315ac453338e43603 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1731551344.48798 5312047 b07fcd2a9090df96fc745b92a3db793b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1731551282 7113016 5ddb1e1a4829de21b68681147a11d1e5 ""
   "Imports/Process.pdf" 1727424487.98841 2462 a811696c989fd1bea30ae4e68a4ce1b7 ""
   "Imports/Process.pdf_tex" 1727424487.98841 2988 25d79e8f840639b029b6b29aac93cda5 ""
   "Imports/ProcessQueue.png" 1727424487.98841 13672 5ae3a1d58c6fc4649531d8c9d11b1ef6 ""
+  "Imports/hard-drive-diagram.jpg" 1732684510.49201 31824 87c40c659c640d9fd1f03ce10b511332 ""
   "Imports/processstatetransition.png" 1727424487.98841 316722 4ab106bd60951f6b25119d789aaf94e3 ""
-  "notes.aux" 1728532996.18115 2925 f7709c985b96e4e884f4fc3ba743031c "pdflatex"
-  "notes.tex" 1728532995.19448 19776 95a75475e2a5739055cbe73300287a15 ""
-  "notes.toc" 1728532996.18115 1832 75ee836cea46efc25a77af5c578afa7e "pdflatex"
+  "notes.aux" 1732686107.45976 3363 c05ce1e29b936c40d127a25f75ea0f28 "pdflatex"
+  "notes.tex" 1732686106.69973 27037 fbb7d06908f43dd82d9480b936644c38 ""
+  "notes.toc" 1732686107.4631 2106 a2b6dbb8134360595f7031c459e124cd "pdflatex"
   (generated)
   "notes.aux"
   "notes.log"

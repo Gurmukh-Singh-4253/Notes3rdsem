@@ -23,3 +23,7 @@
 \contentsline {subsubsection}{\numberline {2.12.1}Preemptive Scheduling Algorithm}{12}{}%
 \contentsline {subsection}{\numberline {2.13}Process synchronization:}{13}{}%
 \contentsline {subsection}{\numberline {2.14}System call}{13}{}%
+\contentsline {subsection}{\numberline {2.15}Deadlock}{13}{}%
+\contentsline {section}{\numberline {3}Virtual Machine}{15}{}%
+\contentsline {section}{\numberline {4}Semaphors}{15}{}%
+\contentsline {section}{\numberline {5}OS scheduling/ Disk arm scheduling algorithm}{16}{}%

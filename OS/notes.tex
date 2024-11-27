@@ -131,7 +131,7 @@
 \begin{enumerate}
   \item Batch OS 
   \item Multiprogramming OS
-  \item Multitasking OS
+  \item Multitasking Os
   \item Multiprocessing OS
   \item Real time OS
 \end{enumerate}
@@ -464,4 +464,119 @@ queue.
     \item positive value
       returns to the parent process and the value is the PID of the process. 
   \end{enumerate}
+  \subsection{Deadlock}
+  a set of processes are said to be in deadlock if they wait for happening of an 
+  event caused by others in the same set. \\
+  \begin{mdframed}
+    Note: Starvation is long waiting and deadlock is infinite waiting. 
+  \end{mdframed}
+  Every deadlock is a starvation but every starvation needn't be a deadlock. \\
+  Resource: A resource can either be a file or a variable or a semaphor or a register
+  or even a cpu.
+  everything in a computer is known as a resource and every process some of it's processes 
+  for it's execution. And whenever it wants a resource it is going to ask the operating system.
+
+  printer only one process should access the printer at a time. 
+  non preemption: 
+  while some process is using some resource we are not allowed to pull that resource
+  e.g. while some process is printing a file, we are not allowed to stop the printing
+  and give the resource (or printer) to some other process. 
+
+  circular wait:
+  Mutual exclusion: 
+  Let us say we have a printer and the user wants to use it. so in order 
+  to use a device like a printer we can use spooling method. so if we have a 
+  printer and if we want to use it we can just say what we want to do with the 
+  printer (we just write the job and leave it be). printer follows FCFS( First come 
+  first serve) 
+  So these processes are not completely for the printer. Instead they are competing 
+  for the school memory. Then we put the jobs in the spool memory and later printer will 
+  read the jobs from the spool memory and execute them one-by-one. Therefore at any 
+  time only one process will be accessing the printer but this spooling process is 
+  not a feasible process for all the resources. In fact it is also not feasible for the 
+  printer because now the processes will be competing for the spool memory. 
+  Using spooling we cannot completely solve the problem but to some extent, yes we can.
+  \begin{table}[h]
+    \centering 
+    \begin{tabular}{|c|c|}
+      \hline 
+      \textbf{Condition} & \textbf{Approach}\\
+      \hline
+      Mutual Exclusion & Spool everything\\
+      Hold and Wait & Request all resources initially\\
+      No premption & Take resources array\\
+      Circular Wait & Order resources Numerically\\
+      \hline
+    \end{tabular}
+  \end{table}
+  Hold and wait condition: \\ 
+  If we want to resolve the situation then we need to allot all the resources to 
+  a process initially before it starts executing. 
+  The solution is Hold or Wait. 
+  \begin{enumerate}
+\item Suppose we are having a process which needs two resources 
+  for it's execution and both the resources are available only and only 
+  we execute the process, otherwise we not.
+\item Do not hold. If we want to make a new request for a new resource, then release 
+  all the resources which you're holding and then make the request together for all the 
+  resources. 
+  The problem with this approach is we cannot predict well ahead of time how many resources 
+  we need and what are the resources we need. So disabling this condition is practically not 
+  feasible because it is very difficult to guess the requirements of a program in advance. 
+\item No premption says that why the process is using a resource. We cannot pull it 
+  forcefully. Now in order to break or disable this condition, we can take the resources away 
+  but this is not a good idea. because it leads to inconsistent results. 
+\item Circular wait condition. Let us say all the resources are numbered as \{R1, R2, R3, R4\}  
+  Now suppose a process P1 has requested a resource R2 and got it, then it should not ask for 
+  resource R1 but instead of this it should ask for something greater than R2. Now since every process 
+  is asking for the resources in increasing order then obviously no process will come back 
+  and ask for a lower number. Therefore the process will not be in a cycle. In this way we can avoid 
+  circular wait. Therefore the procedure is number all the resources and give them some ordering in 
+  sequence and the processes should be restricted in such a way that you should ask for the 
+  resources in an increasing order. In case at any point of execution, if it requires a resource, which 
+  is lower than the resources it already holds then it is supposed to release all the resoures 
+  it is holding. and only after then it can request the lower numbered resources. \\
+  Note: This is the only approach that can be implemented practically and all other approaches cannot be implemented practically
+  \end{enumerate}
+  (So all these three conditions cannot be disabled practically)\\
+
+  Banker's algorithm.\\
+  Max Resources: A-10, B-5, C-7\\ 
+  
+  \section{Virtual Machine}
+  The main objectives/advantages of Virtual machines is whenever the process size is very much big than the main memory, then virtual machine will help the OS to run the processes. Due to this, the user will get an illusion that the main memory is available to run the complete process. E.G. there are two processes, P1 and P2, and here we are not going to load them entirely into the main memory as the main memory will not be sufficient for them. \\
+  Suppose the two processes P1 and P2 are in the secondary memory where both the processes are divided into 8-8 pages and processes. Let us now assume that the main memory is divided into 16 frames. \\
+  In the main memory, top three frames are reserved for the OS. The rest of the frames will be allocated to the user. 
+  \section{Semaphors}
+  It is an integer variables that, apart from initialization, is accessed only through two standard atomic operations - wait and signal. This is used for - critical section and to decide the order of execution among processes and resource management. \\ 
+  A semaphor is a variable that provides an abstraction for controlling the access of a shared resource by multiple processes in a parallel programming environment. 
+  in wait operation the semaphor will decrement and in signal operation the semaphor will increment. Wait can also be denoted as $P(S)$. 
+  \begin{problem}
+    A counting semaphor was initialized to 8 then to P. Operations and seven V (signal) operations were completed on this semaphor
+    What is the resulting value of semaphor. 
+  \end{problem}
+  \begin{problem}A
+    Initial counting: 10 \\
+    P ops: 6\\ 
+    V ops: 4\\
+    Find the final counting \hfill (Ans: 8)
+  \end{problem}
+
+  \section{OS scheduling/ Disk arm scheduling algorithm}
+  Theres an arm, theres a spindle \\
+  theres my heart, slit through the middle.\\
+  \includegraphics[width=\textwidth]{/home/gurmukh/Study/Notes3rdsem/OS/Imports/hard-drive-diagram.jpg}
+  The goal of disk arms scheduling is to minimize the seek time. seek time is the time taken to reach upto the desired track. 
+  \begin{enumerate}
+    \item FCFS/FIFO
+    \item Shortest seek time first (SSTF)
+    \item Scan AKA Elevator Algorithm
+    \item Look
+    \item C-Scan (circular scan)
+    \item C-Look (circular look)
+  \end{enumerate}
+  \begin{problem}
+  A disk contains 200 tracks (0- 199) and request queue contains track ID 82, 170,  43, 140, 24, 16, 190 respectively. The current position of read-write head is 50. Calculate total number of track moments by read-write head. (by FIFO)
+  \end{problem}
+      
 \end{document}

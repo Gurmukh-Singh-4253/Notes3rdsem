@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.3)  10 OCT 2024 14:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.14)  25 NOV 2024 09:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -960,7 +960,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 397--400
 
  []
 
-<figs/Pasted image.png, id=280, 3613.5pt x 2409.0pt>
+<figs/Pasted image.png, id=326, 3613.5pt x 2409.0pt>
 File: figs/Pasted image.png Graphic file (type png)
 <use figs/Pasted image.png>
 Package pdftex.def Info: figs/Pasted image.png  used on input line 421.
@@ -975,7 +975,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 470--474
 
  []
 
-<figs/Pasted image (2).png, id=295, 475.7775pt x 275.0275pt>
+<figs/Pasted image (2).png, id=341, 475.7775pt x 275.0275pt>
 File: figs/Pasted image (2).png Graphic file (type png)
 <use figs/Pasted image (2).png>
 Package pdftex.def Info: figs/Pasted image (2).png  used on input line 481.
@@ -1028,27 +1028,78 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 807.
 
-[16] [17] [18] (./notes.aux)
+[16] [17]
+Package mdframed Info: Not enough space on this page on input line 902.
+ [18]
+Package mdframed Info: Not enough space on this page on input line 902.
+
+Underfull \hbox (badness 10000) in paragraph at lines 930--931
+
+ []
+
+[19] [20]
+./notes.tex:1021: Undefined control sequence.
+l.1021   \Beta
+              (\alpha,\beta) = \int_0^1 x^{\alpha-1} (1-x)^{\beta-1} dx
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./notes.tex:1026: Undefined control sequence.
+<argument> \Beta 
+                 (\alpha , \beta )
+l.1026   f_X(x) = \frac{1}{\Beta(\alpha, \beta)}
+                                                 x^{\alpha-1} (1-x)^{\beta-1...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./notes.tex:1032: Missing $ inserted.
+<inserted text> 
+                $
+l.1032 \subsubsection
+                     {Lognormal Distribution}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./notes.tex:1039: Double superscript.
+l.1039 ...ng to be: $e^{2\mu + \sigma^2}(e^\sigma^
+                                                  2 - 1)
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+./notes.tex:1040: Missing $ inserted.
+<inserted text> 
+                $
+l.1040 \subsubsection
+                     {Weibull Distribution}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[21] (./notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: E65CE3360141CB669CC51497391F8F32;7056.
+(rerunfilecheck)             Checksum: CAF1EC4D4129EB6887840624F2165B79;8543.
  ) 
 Here is how much of TeX's memory you used:
- 27611 strings out of 476076
- 497473 string characters out of 5793775
+ 27641 strings out of 476076
+ 497911 string characters out of 5793774
  1951187 words of memory out of 5000000
- 49126 multiletter control sequences out of 15000+600000
+ 49139 multiletter control sequences out of 15000+600000
  566771 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,9n,93p,638b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on notes.pdf (18 pages, 485357 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on notes.pdf (21 pages, 509183 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 407 compressed objects within 5 object streams
- 112 named destinations out of 1000 (max. 500000)
- 359 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 473 compressed objects within 5 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 431 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -867,4 +867,180 @@ assumes non-negative values and the pmf is given as:
     0 &, otherwise
   \end{cases}
 \]
+
+\section{Continuous Distributions}
+\subsection{Distributions}
+\subsubsection{Uniform Distribution}
+A RV $X$ is said to follow continuous uniform distribution ($X \sim Uniform[a,b]$) over 
+an interval $[a,b] (a<b)$ if it has a pdf as follows: 
+\[
+  f_X(x) = \begin{cases} \frac{1}{b-a} , & x \in [a,b]\\ 
+  0, & otherwise\end{cases}
+\]
+
+If plotted, the pdf takes the shape of a rectangle. Thus this is also called rectangular 
+distribution. 
+
+\noindent The cdf of this distribution takes the following form: 
+\[
+  F_X(x) = \begin{cases} 0&,x\leq a\\ 
+  \frac{x-a}{b-a}&,a< x< b\\ 
+  1&,x\geq b\end{cases}
+\]
+Here $a$ and $b$ are the parameters of the distribution.\\ 
+$E(X) = \frac{a+b}{2}$\\ 
+$V(X) = \frac{b^2 - a^2}{12}$
+
+\begin{problem}{11}
+  A wire of length $a$ units is divided into two parts. If the part of random length $X$ is 
+  uniformly distributed then find expectation and variance of $X$.
+\end{problem}
+
+\begin{mdframed}
+  \Large Presentation topic:\\
+  \normalsize Continuous Distributions
+\end{mdframed}
+
+\subsubsection{Normal Distribution}
+Also called Gaussian or Symmetric Distribution.
+A RV $X$ is said to follow normal distribution with parameters $\mu,\sigma^2$ where
+$\mu$ is the mean and $\sigma^2$ is the variance.\\
+The pdf of such a variable is: 
+\[
+  f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{1}{2}\left( \frac{x-\mu}{\sigma}\right)^2}
+\]
+Mathematically, we can denote this RV as: $X\sim N(\mu,\sigma^2)$
+
+\noindent
+Standard normal variate (Z) is
+\[
+  \frac{X-\mu}{\sigma}
+\]
+The Standard normal variate of any $X\sim N(\mu,\sigma^2)$ follows the 
+Standard normal distribution, which is $N(0,1)$.
+
+\noindent
+Properties of Normal Distribution: 
+\begin{enumerate}
+  \item The Probability Density function of Normal Distribution is bell shaped and 
+    symmetrical. 
+  \item The Mean, Median and Mode of the Distribution coincide. 
+  \item $\beta_1 = 0$ and $\beta_2 = 3$    
+  \item Quartile Deviation : Mean Deviation : Standard Deviation :: 10:12:15
+  \item The probability under this curve is 1. Partwise we can say: \\
+    \begin{align*}
+      P(X \in (\mu-\sigma,\mu+\sigma)) &= 0.6826\\
+      P(X \in (\mu-2\sigma,\mu+2\sigma)) &= 0.9544\\
+      P(X \in (\mu-3\sigma,\mu+3\sigma)) &= 0.9973
+    \end{align*}
+\end{enumerate}
+
+\begin{problem}{13}
+  $X$ is normally distributed with mean 12 and standard deviation 4. Find the 
+  probability that $X\geq20$ and $X\leq20$ \hfill (0.0228 and 0.9172) 
+\end{problem}
+
+\begin{problem}{14}
+  $X$ is a normal variate with mean 30 and variance 25. Find the probability 
+  that $26\geq X\geq 40$ and $X \geq 45$. \hfill ()
+\end{problem}
+
+\subsubsection{Gamma Distribution}or
+First of all, this is the gamma function:
+\[
+  \Gamma_\alpha = \int_0^\infty x^{\alpha-1}e^{-x} dx
+\]
+Coincidentially, 
+\[
+  \Gamma_n = (n-1)! \ \forall n \in \mathbb{Z}
+\]
+And 
+\[
+  \Gamma_\frac{1}{2} = \pi
+\]
+A Continuous Random variable $X$ is said to follow Gamma Distribution with parameters
+$\alpha,\beta$ if the density function is given as 
+\[
+  f_X(x) = \frac{1}{\beta^\alpha \Gamma_\alpha} x^{\alpha-1} e^{\frac{-x}{b}}
+\]
+The mean of Gamma Distribution is $\alpha\beta$. \\
+The variance of Gamma Distribution is $\alpha\beta^2$.
+\subsubsection{Exponential Distribution}
+This is a particular case of Gamma Distribution where $\alpha = 1$. Thus the pdf
+becomes: 
+\[
+  f_X(x) = \frac{1}{\beta} e^\frac{-x}{\beta}
+\]
+The mean of Gamma Distribution is $\beta$. \\
+The variance of Gamma Distribution is $\beta^2$.
+\vspace{1cm}
+\begin{mdframed}
+  Let $x = $ the amount of time (in years) a computer parts lasts. 
+  \[
+    \mu = 10
+  \]
+  so 
+  \[
+    m = \frac{1}{\mu} = \frac{1}{10} = 0.1
+  \]
+  Find 
+  $P(x > 7).$ Draw the graph.
+  \[ 
+    P(x > 7) = 1 - P (x<7)
+  \]
+  Since $P(X<x)=1-e^{-mx}$ then, 
+  \[
+  P(X>x)=1-(1-e^{-mx})=e^{-mx}\]
+  \[  
+  P(x>7)=e^{(-0.1)(7)}=0.4966
+    \]
+\end{mdframed}
+
+$\lambda$ is mean number of events per unit time. $X$ is a random variable denoting 
+time required for the first event to occur. Then the probability of no events 
+occuring in span upto time $t$ is: 
+\[
+  P(0, \lambda t) = \frac{e^{-\lambda t}(-\lambda t)^0}{0!} = e^{-\lambda t}
+\]
+
+The probability that the length of time until first event will exceed $x$ is same 
+as the probibility that no poisson event will occur in $x$.
+
+The density of Exponential distribution with $\lambda$ as a parameter is: 
+\[
+  f_X(x) = \begin{cases} \lambda e^{-\lambda x} &, x > 0\\ 
+  0 &, otherwise\end{cases}
+\]
+From the previous formulae the difference is $\lambda = \frac{1}{\beta}$\\
+Thus the mean is $\frac{1}{\lambda}$.\\
+Thus the variance is $\frac{1}{\lambda^2}$.
+
+\subsubsection{Beta Distribution} 
+The Beta function is as follows:
+\[
+  \Beta(\alpha,\beta) = \int_0^1 x^{\alpha-1} (1-x)^{\beta-1} dx
+\]
+
+The pdf of the beta distribution is 
+\[
+  f_X(x) = \frac{1}{\Beta(\alpha, \beta)} x^{\alpha-1} (1-x)^{\beta-1}\ \forall 
+  0 < x < 1
+\]
+
+The mean of the Beta distribution is $ \frac{\alpha}{\alpha+\beta}$\\
+The variance of the Beta distribution is $ \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha + \beta + 1)}
+\subsubsection{Lognormal Distribution}
+Here we study $ Y = \ln X $ where $ X \sim N(\mu, \sigma^2) $\\ 
+The pdf of this distribution is: 
+\[
+  \frac{1}{\sqrt{2 \pi \sigma_x}} e^{\frac{-1}{2\sigma^2}\left( \ln x - \mu \right)^2}
+\]
+The mean of this distribution is going to be: $e^{\mu + \frac{\sigma^2}{2}}$\\
+The variance of this distribution is going to be: $e^{2\mu + \sigma^2}(e^\sigma^2 - 1)
+\subsubsection{Weibull Distribution}
+A random variable $X$ is said to follow Weibull Distribution with parameters $\alpha$ and $\beta$ if it follows a pdf as follows:
+\[
+  f_X(x) = \begin{cases} \alpha\beta x^{\beta-1} e^{-\alpha x^\beta} ,& x>0 \\
+  0 ,& \text{elsewhere}\end{cases}
+\]
 \end{document}
