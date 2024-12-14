@@ -27,3 +27,4 @@
 \contentsline {section}{\numberline {3}Virtual Machine}{15}{}%
 \contentsline {section}{\numberline {4}Semaphors}{15}{}%
 \contentsline {section}{\numberline {5}OS scheduling/ Disk arm scheduling algorithm}{16}{}%
+\contentsline {section}{\numberline {6}Paging}{16}{}%

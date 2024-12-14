@@ -1018,17 +1018,17 @@ Thus the variance is $\frac{1}{\lambda^2}$.
 \subsubsection{Beta Distribution} 
 The Beta function is as follows:
 \[
-  \Beta(\alpha,\beta) = \int_0^1 x^{\alpha-1} (1-x)^{\beta-1} dx
+  B(\alpha,\beta) = \int_0^1 x^{\alpha-1} (1-x)^{\beta-1} dx
 \]
 
 The pdf of the beta distribution is 
 \[
-  f_X(x) = \frac{1}{\Beta(\alpha, \beta)} x^{\alpha-1} (1-x)^{\beta-1}\ \forall 
+  f_X(x) = \frac{1}{B(\alpha, \beta)} x^{\alpha-1} (1-x)^{\beta-1}\ \forall 
   0 < x < 1
 \]
 
 The mean of the Beta distribution is $ \frac{\alpha}{\alpha+\beta}$\\
-The variance of the Beta distribution is $ \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha + \beta + 1)}
+The variance of the Beta distribution is $ \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha + \beta + 1)}$
 \subsubsection{Lognormal Distribution}
 Here we study $ Y = \ln X $ where $ X \sim N(\mu, \sigma^2) $\\ 
 The pdf of this distribution is: 
@@ -1036,11 +1036,19 @@ The pdf of this distribution is:
   \frac{1}{\sqrt{2 \pi \sigma_x}} e^{\frac{-1}{2\sigma^2}\left( \ln x - \mu \right)^2}
 \]
 The mean of this distribution is going to be: $e^{\mu + \frac{\sigma^2}{2}}$\\
-The variance of this distribution is going to be: $e^{2\mu + \sigma^2}(e^\sigma^2 - 1)
+The variance of this distribution is going to be: $e^{2\mu + \sigma^2}(e^{\sigma^2} - 1)$
 \subsubsection{Weibull Distribution}
 A random variable $X$ is said to follow Weibull Distribution with parameters $\alpha$ and $\beta$ if it follows a pdf as follows:
 \[
   f_X(x) = \begin{cases} \alpha\beta x^{\beta-1} e^{-\alpha x^\beta} ,& x>0 \\
   0 ,& \text{elsewhere}\end{cases}
 \]
+\section{Joint Random Variables}
+\subsection{Statistical Independence of Random Variables}
+Two Random Variables $X$ and $Y$ are said to be independent if and only if: 
+\[
+  f_XY(x,y) = f_X(x)f_Y(y)
+\]
+\subsection{Mean and variance of JRV}
+
 \end{document}

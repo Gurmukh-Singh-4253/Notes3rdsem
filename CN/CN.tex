@@ -175,21 +175,46 @@ The quality of signal deteriorates during transmission. it may have three causes
 
 \begin{definition}
    Attenuation is the loss of energy over the transmitted distance. It in measured in decibels (dB)
-   \[
-     Attenuation = 10 \log(\frac{10}{})
-   \]
 \end{definition}
-\subsection{Layers of OSI model}
+\subsection{Layers of OSI model}subsection
 
 \subsection{CRC: Cyclic Redundancy Check}
 \begin{enumerate}
-  \item This is used for error detection methods. 
+  \item This is used for error detection methods. item
   \item It is a very powerful method and widely used in real time enviroment. 
   \item It can detect all odd errors. 
   \item It can detect single and double bit errors. 
   \item It can detect burst error of length equals to polynomial degree. 
 \end{enumerate}
 
-Efficiency = Channel utilization for sending the message = $\frac{number of message bits}{total number of bits}
+Efficiency = Channel utilization for sending the message = $\frac{number of message bits}{total number of bits}$
+
+\section{Forwarding and Routing Protocols}
+Forwarding means sending packets in a "right" manner. 
+\begin{enumerate}
+  \item Cost effective
+  \item Time efficient
+  \item No congestion
+\end{enumerate}
+Routing protocols are of 3 types: 
+\begin{enumerate}
+  \item Unicast
+  \item Multicast
+  \item Broadcast
+\end{enumerate}
+
+\subsection{Unicast}
+Unicast is of further two types :
+\begin{enumerate}
+  \item Intra-Domain
+    \begin{enumerate}
+      \item Distance version- RIP (Routing Information Protocol)
+      \item Link State version - (OSPFC - Open Source Path First) (Uses Djikstras)
+    \end{enumerate}
+  \item Inter-Domain
+    \begin{enumerate}
+      \item Path vector (BGP)
+    \end{enumerate}
+\end{enumerate}
 
 \end{document}

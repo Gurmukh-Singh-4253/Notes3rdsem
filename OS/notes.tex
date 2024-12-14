@@ -578,5 +578,17 @@ queue.
   \begin{problem}
   A disk contains 200 tracks (0- 199) and request queue contains track ID 82, 170,  43, 140, 24, 16, 190 respectively. The current position of read-write head is 50. Calculate total number of track moments by read-write head. (by FIFO)
   \end{problem}
-      
+  \section{Paging}
+  Paging is a storage mechanism used to retrieve processes from the secondary storage into the main memory, RAM, in the form of pages. The main idea behind the paging is to divide each process in the form of pages. The main memory will also be divided in the form of frames. One page of the process is to be stored in one of the frames of the memory.
+  In a system we have three main components: 
+  \begin{enumerate}
+    \item RAM (upto 16GB)
+    \item Secondary memory (upto 2TB)
+  \end{enumerate}
+  note that page size = frame size.\\
+  Suppose you are having a page of 2B and a process of size 4B. The number of pages per process will be 2. If the main memory is of 16B then the frame size is going to be 2B and the number of frames will be 8. 
+  The pages can be stored under different locations of the memory but the priority is to always find the contiguous frames. Pages of the process are brought into the main memory only when they are required otherwise they reside in the secondary storage. the size of each frame must be equal considering the fact that the pages are mapped to the frames in paging. The page size needs to be as same as the frame size. Different OS define different frame sizes. 
+  \begin{problem}A
+    Consider a system which has logical address 7 bits, physical address 6 bits, page size 8 words. Then calculate the number of pages and number of frames. 
+  \end{problem}
 \end{document}
